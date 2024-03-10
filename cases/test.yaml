@@ -16,10 +16,16 @@ case_name1:
     name: $.data.name
   # 断言
   assert_expression:
-    - 1=='1'
-    - cc=='dad'
-    - 12 in '123'
-    - ig in '$.lpl.ig'
+    - eq: [ 1,select title from case_test where i=1 ]
+    - eq: [ cc, dad]
+    - in: [12,'123']
+    - nin: [$.lpl.ig,'123']
+    - ne: [$.lpl.ig, '123']
+    - in: [ig, $.lpl.ig]
+    - eq: [a, $.dad]
+    - eq: [$.lpl.ig , select title from case_test where i=1]
+    - eq: [$.lpl.ig , $.dad]
+    - eq: [select title from case_test where i=1 , select title from case_test where i=2]
 
 # 用例（名称）标题
 case_name2:
@@ -39,10 +45,16 @@ case_name2:
     name: $.data.name
   # 断言
   assert_expression:
-    - 1=='1'
-    - cc=='dad'
-    - 12 in '123'
-    - ig in '$.lpl.ig'
+    - eq: [ 1,select title from case_test where i=1 ]
+    - eq: [ cc, dad]
+    - in: [12,'123']
+    - nin: [$.lpl.ig,'123']
+    - ne: [$.lpl.ig, '123']
+    - in: [ig, $.lpl.ig]
+    - eq: [a, $.dad]
+    - eq: [$.lpl.ig , select title from case_test where i=1]
+    - eq: [$.lpl.ig , $.dad]
+    - eq: [select title from case_test where i=1 , select title from case_test where i=2]
 
 # 用例（名称）标题
 case_name3:
@@ -62,10 +74,16 @@ case_name3:
     name: $.data.name
   # 断言
   assert_expression:
-    - 1=='1'
-    - cc=='dad'
-    - 12 in '123'
-    - ig in '$.lpl.ig'
+    - eq: [ 1,select title from case_test where i=1 ]
+    - eq: [ cc, dad]
+    - in: [12,'123']
+    - nin: [$.lpl.ig,'123']
+    - ne: [$.lpl.ig, '123']
+    - in: [ig, $.lpl.ig]
+    - eq: [a, $.dad]
+    - eq: [$.lpl.ig , select title from case_test where i=1]
+    - eq: [$.lpl.ig , $.dad]
+    - eq: [select title from case_test where i=1 , select title from case_test where i=2]
 
 # 用例（名称）标题
 case_name4:
@@ -85,7 +103,13 @@ case_name4:
     name: $.data.name
   # 断言
   assert_expression:
-    - 1=='1'
-    - cc=='dad'
-    - 12 in '123'
-    - ig in '$.lpl.ig'
+    - eq: [ 1,select title from case_test where i=1 ]
+    - eq: [ cc, dad]
+    - in: [12,'123']
+    - nin: [$.lpl.ig,'123']
+    - ne: [$.lpl.ig, '123']
+    - in: [ig, $.lpl.ig]
+    - eq: [a, $.dad]
+    - eq: [$.lpl.ig , select title from case_test where i=1]
+    - eq: [$.lpl.ig , $.dad]
+    - eq: [select title from case_test where i=1 , select title from case_test where i=2]
