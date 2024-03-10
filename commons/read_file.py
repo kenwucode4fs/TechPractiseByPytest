@@ -34,3 +34,4 @@ class ReadFile:
 if __name__ == '__main__':
     print(ReadFile.project_dir)
     print(ReadFile.read_yaml("files/yaml/yaml_1.yaml"))
+    print(ReadFile.read_yaml("cases/test.yaml"))

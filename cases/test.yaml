@@ -1,0 +1,22 @@
+# 用例（名称）标题
+case_name:
+  # 接口地址：
+  path:
+  # 请求方法
+  method:
+  # 备注信息
+  remark:
+  # 是否运行
+  is_run: True
+  # 请求参数
+  data: { "id": $.tq_data.id,"projectNo": "1234309043","name": $.tq_data.name }
+  # 从接口返回结果提取哪些字段和提取表达式， 比如从返回数据中提取用户ID和NAME
+  extract_key:
+    id: $.data.id
+    name: $.data.name
+  # 断言
+  assert_expression:
+    - 1=='1'
+    - cc=='dad'
+    - 12 in '123'
+    - ig in $.lpl.ig
