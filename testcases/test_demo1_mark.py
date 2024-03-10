@@ -18,7 +18,7 @@ class TestDemoMark:
     测试Pytest.INI中的MARK分组
     """
 
-    # @pytest.mark.user_manage
+    @pytest.mark.user_manage
     def test_demo1(self):
         """
         用户管理测试用例1
