@@ -1,0 +1,29 @@
+# SIT测试环境
+SIT_env:
+  http: https://www.baidu.com/
+  domain_name: sit
+  headers:
+    Accept-Encoding: gzip, deflate, br
+    Accept-Language: zh-CN,zh-Hans;q=0.9
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15
+    token: zxcvzxvasdfasdfqwerafsdfs
+
+# UAT环境
+UAT_env:
+  http: https://www.baidu.com/
+  domain_name: uat
+  headers:
+    Accept-Encoding: gzip, deflate, br
+    Accept-Language: zh-CN,zh-Hans;q=0.9
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15
+    token: asdfasdfasdqwerqwerqwerasdfasdf
+
+# PRE环境
+PRE_env:
+  http: https://www.baidu.com/
+  domain_name: pre
+  headers:
+    Accept-Encoding: gzip, deflate, br
+    Accept-Language: zh-CN,zh-Hans;q=0.9
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15
+    token: asdfgfdhghtreyhdfghgfhcvbnbvcn
