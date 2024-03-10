@@ -25,4 +25,5 @@ def request_env_info(env="SIT"):
         request_info = env_info['UAT']
     if env == "PRE":
         request_info = env_info['PRE']
-    return {'ip': request_info['http:'] + request_info['domain_name'], 'headers': request_info['headers']}
+    return {'ip': request_info['http'] + str(request_info['ip']) + ':' + str(request_info['port']),
+            'headers': request_info['headers']}

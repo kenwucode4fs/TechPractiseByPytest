@@ -1,7 +1,8 @@
 # SIT测试环境
 SIT:
-  http: https://
-  domain_name: sit
+  http: http://
+  ip: 127.0.0.1
+  port: 9103
   headers:
     Accept-Encoding: gzip, deflate, br
     Accept-Language: zh-CN,zh-Hans;q=0.9
@@ -10,8 +11,9 @@ SIT:
 
 # UAT环境
 UAT:
-  http: https://
-  domain_name: uat
+  http: http://
+  ip: 127.0.0.1
+  port: 9103
   headers:
     Accept-Encoding: gzip, deflate, br
     Accept-Language: zh-CN,zh-Hans;q=0.9
@@ -20,8 +22,9 @@ UAT:
 
 # PRE环境
 PRE:
-  http: https://
-  domain_name: pre
+  http: http://
+  ip: 127.0.0.1
+  port: 9103
   headers:
     Accept-Encoding: gzip, deflate, br
     Accept-Language: zh-CN,zh-Hans;q=0.9
