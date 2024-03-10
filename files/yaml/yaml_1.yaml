@@ -1,0 +1,9 @@
+feature: 模块
+story: 接口
+title: 用例标题
+request:
+  method: 请求头
+  url: 请求路径
+  headers: 请求头
+  params/data/json/files: 参数
+validate: 断言

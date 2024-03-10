@@ -19,30 +19,6 @@
 import pytest
 import time
 import os
-import allure
-
-
-# @allure.feature('test_success')
-# def test_success():
-#     """this test succeeds"""
-#     assert True
-#
-#
-# @allure.feature('test_failure')
-# def test_failure():
-#     """this test fails"""
-#     assert False
-#
-#
-# @allure.feature('test_skip')
-# def test_skip():
-#     """this test is skipped"""
-#     pytest.skip('for a reason!')
-#
-#
-# @allure.feature('test_broken')
-# def test_broken():
-#     raise Exception('oops')
 
 
 if __name__ == '__main__':
