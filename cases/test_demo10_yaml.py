@@ -14,6 +14,7 @@ path_1 = "/Users/kenwu/Documents/TechSet/TechPractiseByPytest/files/yaml/yaml_1.
 path_2 = "/Users/kenwu/Documents/TechSet/TechPractiseByPytest/files/yaml/yaml_2.yaml"
 path_3 = "/Users/kenwu/Documents/TechSet/TechPractiseByPytest/files/yaml/yaml_3.yaml"
 
+
 @allure.epic("项目名称：yaml相关的功能")
 @allure.feature("模块：yaml的读写")
 class TestYaml:
@@ -45,7 +46,7 @@ class TestYaml:
         :return:
         """
         yaml_datas = {"name1": "味觉1"}
-        write_yaml(path_2,yaml_datas)
+        write_yaml(path_2, yaml_datas)
         print("yaml_2用例1：测试yaml文件覆盖写成功")
         allure.attach(str(yaml_datas), name="写入的结果")
 
@@ -59,7 +60,7 @@ class TestYaml:
         :return:
         """
         yaml_datas = {"name2": "味觉2"}
-        append_yaml(path_2,yaml_datas)
+        append_yaml(path_2, yaml_datas)
         print("yaml_3用例1：测试yaml文件追加写成功")
         allure.attach(str(yaml_datas), name="写入的结果")
 
