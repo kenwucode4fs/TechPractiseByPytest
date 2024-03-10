@@ -17,7 +17,42 @@
 
 
 import pytest
+import time
+import os
+import allure
+
+
+# @allure.feature('test_success')
+# def test_success():
+#     """this test succeeds"""
+#     assert True
+#
+#
+# @allure.feature('test_failure')
+# def test_failure():
+#     """this test fails"""
+#     assert False
+#
+#
+# @allure.feature('test_skip')
+# def test_skip():
+#     """this test is skipped"""
+#     pytest.skip('for a reason!')
+#
+#
+# @allure.feature('test_broken')
+# def test_broken():
+#     raise Exception('oops')
+
 
 if __name__ == '__main__':
     pytest.main()
     # pytest.main(["-vsm product_manage"])
+
+    time.sleep(10)
+    # 通过 os.system 向系统终端输入指令 allure generate 表示生成 html 报告，
+    # ./allureTemps 表示用来生成html的JSON临时文件目录
+    # ./reports 表示html文件生成目录
+    # --clean 表示生成前清空之前的文件
+    os.system("allure generate ./allureresults -o ./reports --clean")
+    os.system("allure open ./reports")

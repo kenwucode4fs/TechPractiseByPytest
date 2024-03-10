@@ -8,14 +8,16 @@
 @Email: 370483689@qq.com
 """
 import pytest
+import allure
 
 
+@allure.epic("项目名称：Pytest最佳实践之Mark")
 class TestDemoMark:
     """
     测试Pytest.INI中的MARK分组
     """
 
-    @pytest.mark.user_manage
+    # @pytest.mark.user_manage
     def test_demo1(self):
         """
         用户管理测试用例1

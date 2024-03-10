@@ -27,14 +27,14 @@ class TestApiOrder:
     def test_case_03(self):
         print("用例3")
 
-    @pytest.mark.run(order=-1)
+    @pytest.mark.run(order=3)
     def test_case_04(self):
         print("用例4")
 
-    @pytest.mark.run(order=-2)
+    @pytest.mark.run(order=9)
     def test_case_05(self):
         print("用例5")
 
-    @pytest.mark.run(order=-5)
+    @pytest.mark.run(order=4)
     def test_case_06(self):
         print("用例6")
