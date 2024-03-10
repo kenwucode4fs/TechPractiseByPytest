@@ -12,6 +12,7 @@ import allure
 
 
 @allure.epic("项目名称：Pytest最佳实践之Mark")
+@allure.feature("模块:Mark")
 class TestDemoMark:
     """
     测试Pytest.INI中的MARK分组

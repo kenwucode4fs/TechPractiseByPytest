@@ -7,20 +7,28 @@
 @Date:         2024/3/9
 @Email: 370483689@qq.com
 """
+import allure
 
 
+@allure.epic("项目名称：Pytest最佳实践之Assert")
+@allure.feature("模块:Assert")
 class TestAssert:
     """
     断言测试。
     """
 
+    @allure.story("接口:base_url校验")
+    @allure.title("用例1：base_url校验 用例命名方式1")
     def test_case_01(self, base_url):
         print("用例1 :{0}".format(base_url))
         assert "www" in base_url
 
+    @allure.story("接口:base_url校验")
     def test_case_02(self, base_url):
+        allure.dynamic.title("用例2：base_url校验 用例命名方式2")
         print("用例2：{0}".format(base_url))
         assert "wwww" == base_url
 
+    @allure.story("接口:常规接口校验")
     def test_case_03(self):
         print("用例3")

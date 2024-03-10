@@ -9,8 +9,11 @@
 """
 
 import pytest
+import allure
 
 
+@allure.epic("项目名称：Pytest最佳实践之order")
+@allure.feature("模块:order")
 class TestApiOrder:
     """
     测试用例执行顺序

@@ -8,8 +8,11 @@
 @Email: 370483689@qq.com
 """
 import pytest
+import allure
 
 
+@allure.epic("项目名称：Pytest最佳实践之Skip")
+@allure.feature("模块:Skip")
 class TestDemoSkip:
     """
     测试跳过案例方法

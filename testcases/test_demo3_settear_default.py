@@ -7,8 +7,11 @@
 @Date:         2024/3/9
 @Email: 370483689@qq.com
 """
+import allure
 
 
+@allure.epic("项目名称：Pytest最佳实践之默认SetupTeardown")
+@allure.feature("模块:SetupTeardown")
 class TestApiByDefault:
     """
     使用默认的前置后置函数
