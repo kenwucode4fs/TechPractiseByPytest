@@ -1,9 +1,20 @@
-feature: 模块
-story: 接口
-title: 用例标题
-request:
-  method: 请求头
-  url: 请求路径
-  headers: 请求头
-  params/data/json/files: 参数
-validate: 断言
+-
+  feature: 模块1
+  story: 接口1
+  title: 用例标题1
+  request:
+    method: 请求头1
+    url: 请求路径1
+    headers: 请求头1
+    params/data/json/files: 参数1
+  validate: 断言1
+-
+  feature: 模块2
+  story: 接口2
+  title: 用例标题2
+  request:
+    method: 请求头2
+    url: 请求路径2
+    headers: 请求头2
+    params/data/json/files: 参数2
+  validate: 断言2
